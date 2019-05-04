@@ -4,4 +4,4 @@ TEMPDIR="$PWD$TEST_DIRECTORY"
 cd $TEMPDIR
 yarn
 npm run test:unit
-curl -s https://codecov.io/bash | bash
+curl -s https://codecov.io/bash
