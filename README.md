@@ -1,5 +1,10 @@
 # jenkins
 
+
+[![codecov](https://codecov.io/gh/shubhadip/jenkins-gith/branch/master/graph/badge.svg)](https://codecov.io/gh/shubhadip/jenkins-gith)
+
+
+
 ## Project setup
 ```
 yarn install
