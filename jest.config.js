@@ -7,6 +7,7 @@ module.exports = {
     'ts',
     'tsx'
   ],
+  coverageReporters: ['lcov', 'text-summary'],
   transform: {
     '^.+\\.vue$': 'vue-jest',
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
@@ -21,6 +22,7 @@ module.exports = {
   snapshotSerializers: [
     'jest-serializer-vue'
   ],
+  coverageReporters: ['lcov', 'text-summary'],
   testMatch: [
     '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
   ],
@@ -32,6 +34,19 @@ module.exports = {
   globals: {
     'ts-jest': {
       babelConfig: true
+    }
+  },
+  collectCoverage: true,
+  collectCoverageFrom: [
+    'src/utils/*.{ts}',
+    '!src/main.ts', // No need to cover bootstrap file
+  ],
+  coverageThreshold: {
+    global: {
+      "branches": 70,
+      "functions": 70,
+      "lines": 70,
+      "statements": 70
     }
   }
 }
