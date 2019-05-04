@@ -19,11 +19,11 @@ describe('All LowerCase Function', () => {
         expect(response).toBeFalsy()
         expect(response).toBe('')
     })
-    // it('input not avaliable', () => {
-    //     const response = allLowercase('sd')
-    //     expect(response).toBeTruthy()
-    //     expect(response).toBe('sd')
-    // })
+    it('input not avaliable', () => {
+        const response = allLowercase('sd')
+        expect(response).toBeTruthy()
+        expect(response).toBe('sd')
+    })
 })
 
 describe('All UpperCase Function', () => {
