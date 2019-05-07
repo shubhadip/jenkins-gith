@@ -6,11 +6,11 @@ describe('Test Capitalize Function', () => {
         expect(response).toBeFalsy()
         expect(response).toBe('')
     })
-    // it('input avaliable', () => {
-    //     const response = capitalize('test')
-    //     expect(response).toBeTruthy()
-    //     expect(response).toBe('Test')
-    // })
+    it('input avaliable', () => {
+        const response = capitalize('test')
+        expect(response).toBeTruthy()
+        expect(response).toBe('Test')
+    })
 })
 
 describe('All LowerCase Function', () => {
